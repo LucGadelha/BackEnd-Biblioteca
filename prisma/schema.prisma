@@ -17,3 +17,10 @@ model User {
   createdAt DateTime @default(now())
   updateAt  DateTime @updatedAt
 }
+
+model Book {
+  id        String   @id @default(uuid()) @db.Uuid
+  title     String
+  createdAt DateTime @default(now())
+  updateAt  DateTime @updatedAt
+}
